@@ -1,0 +1,86 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Collection Part Start
+================================================*/
+#collection {
+    .collection_img {
+        position: relative;
+
+        img {
+            border-radius: 5px;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+
+            p {
+                @include fs($cl1, 18px, 400, $ff1);
+
+                span {
+                    color: $cl3;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+            }
+
+            h1 {
+                @include fs($cl1, 26px, 700, $ff1);
+                text-transform: uppercase;
+            }
+
+            h3 {
+                @include fs($cl1, 26px, 500, $ff1);
+                text-transform: capitalize;
+            }
+
+            h5 {
+                @include fs($cl2, 14px, 400, $ff1);
+                padding-top: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: $cl3;
+                }
+            }
+        }
+
+        .overlay2 {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+
+            p {
+                @include fs(#c4c4c5, 18px, 400, $ff1);
+            }
+
+            h1 {
+                @include fs(#fff, 26px, 700, $ff1);
+                text-transform: uppercase;
+            }
+
+            h3 {
+                @include fs(#fff, 26px, 500, $ff1);
+                text-transform: capitalize;
+            }
+
+            h5 {
+                @include fs(#fff, 14px, 400, $ff1);
+                padding-top: 20px;
+
+                span {
+                    font-weight: 700;
+                    color: $cl3;
+                }
+            }
+
+        }
+    }
+}
+
+/*==============================================
+             Collection  Part End
+================================================*/

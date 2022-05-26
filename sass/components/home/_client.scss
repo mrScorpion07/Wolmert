@@ -1,0 +1,42 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Client Part Start
+================================================*/
+#client {
+    padding-bottom: 60px;
+
+    .client_head {
+        position: relative;
+
+        h3 {
+            @include fs($cl1, 20px, 700, $ff1);
+            text-transform: capitalize;
+        }
+
+        &::after {
+            @include after_bl(-22px, 0, 100%, 1px, #ddd);
+        }
+    }
+
+    .client_slider {
+        margin-top: 60px;
+        border: 1px solid #eee;
+
+        .logo_img {
+            &:first-child {
+                border-right: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+            }
+
+            &:last-child {
+                border-right: 1px solid #eee;
+            }
+        }
+    }
+}
+
+/*==============================================
+             Client  Part End
+================================================*/

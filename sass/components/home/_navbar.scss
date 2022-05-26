@@ -1,0 +1,1203 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+                Navbar Part Start
+================================================*/
+#navbar {
+    background: #fff;
+
+    .menu_left {
+        .left_main {
+            position: relative;
+
+            >a {
+                padding: 19px 0 19px;
+                background: #f1f1f1;
+                display: block;
+                padding-left: 25px;
+                position: relative;
+                @include fs($cl1, 14px, 700, $ff1);
+                text-transform: uppercase;
+
+                .ic_list {
+                    padding-right: 10px;
+                    font-size: 16px;
+                    color: $cl1;
+                }
+
+                .cv_down {
+                    position: absolute;
+                    right: 15px;
+                    top: 40%;
+                    transform: translateX(-50%);
+                    font-size: 13px;
+                    color: $cl1;
+                }
+            }
+
+            .left_menu_drop {
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                background: #fff !important;
+                text-align: left;
+                // box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.9);
+                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                padding: 15px 21px;
+                z-index: 999;
+
+                ul {
+                    li {
+                        position: relative;
+                        border-bottom: 1px solid #f1f1f1;
+
+                        &:last-child {
+                            border: none;
+
+                            a {
+                                @include fs($hover, 14px, 600, $ff1);
+                                padding-left: 3px;
+                                text-transform: uppercase;
+
+                                .ic_ctr {
+                                    position: absolute;
+                                    right: 118px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-size: 12px;
+                                    color: $hover;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                color: $hover;
+                            }
+
+                            .ic_dw {
+                                color: $hover;
+                            }
+
+                            .ic_right {
+                                color: $hover;
+                                transform: translateX(5px);
+                            }
+
+                            .left_mega_menu {
+                                visibility: visible;
+                                opacity: 1;
+                                left: 107%;
+                            }
+
+                            .left_mega_menu2 {
+                                visibility: visible;
+                                opacity: 1;
+                                left: 107%;
+                            }
+
+                            .left_mega_menu3 {
+                                visibility: visible;
+                                opacity: 1;
+                                left: 107%;
+                            }
+
+                            .left_furniture_megamenu {
+                                visibility: visible;
+                                opacity: 1;
+                                left: 107%;
+                            }
+                        }
+
+                        a {
+                            padding: 9px 0;
+                            display: block;
+                            @include fs($cl1, 13px, 500, $ff1);
+                            text-transform: capitalize;
+                            transition: all linear .3s;
+
+                            .ic_dw {
+                                font-size: 16px;
+                                color: $cl2;
+                                padding-right: 10px;
+                                transition: all linear .3s;
+                            }
+
+                            .ic_right {
+                                font-size: 10px;
+                                color: $cl2;
+                                float: right;
+                                padding-top: 3px;
+                                transform: translateX(-10px);
+                                transition: all linear .4s;
+                            }
+
+                        }
+
+                        .left_mega_menu {
+                            width: 690px;
+                            background: #fff;
+                            position: absolute;
+                            left: 102%;
+                            top: -9px;
+                            box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                            opacity: 0;
+                            visibility: hidden;
+                            padding-left: 20px;
+                            transition: all linear .3s;
+                            z-index: 999;
+
+                            .women {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s
+                                        }
+                                    }
+                                }
+                            }
+
+                            .men {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left_mega_img {
+                                position: relative;
+
+                                .overlay {
+                                    position: absolute;
+                                    left: 28px;
+                                    top: 18px;
+
+                                    p {
+                                        @include fs($cl1, 14px, 500, $ff1);
+
+                                        span {
+                                            color: $hover;
+                                            font-weight: 600;
+                                        }
+                                    }
+
+                                    h2 {
+                                        @include fs($cl1, 25px, 700, $ff1);
+                                    }
+
+                                    a {
+                                        text-transform: uppercase;
+                                        @include fs($cl1, 13px, 600, $ff1);
+                                        transition: all linear .3s;
+
+                                        &:hover {
+                                            color: $hover;
+
+                                            i {
+                                                padding-left: 18px;
+                                            }
+                                        }
+
+                                        i {
+                                            padding-left: 8px;
+                                            transition: all linear .3s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .left_mega_menu2 {
+                            width: 690px;
+                            background: #fff;
+                            position: absolute;
+                            left: 102%;
+                            top: -2px;
+                            box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                            opacity: 0;
+                            visibility: hidden;
+                            padding-left: 20px;
+                            transition: all linear .3s;
+                            z-index: 999;
+
+                            .text_upp {
+                                h4 {
+                                    padding-top: 0px !important;
+                                }
+                            }
+
+                            .side_text {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s
+                                        }
+                                    }
+                                }
+                            }
+
+                            .side_text2 {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left_mega_img2 {
+                                position: relative;
+
+                                img {
+                                    height: 470px;
+                                }
+
+                                .overlay {
+                                    position: absolute;
+                                    left: 20px;
+                                    top: 70%;
+
+                                    h5 {
+                                        @include fs(#fff, 16px, 600, $ff1);
+                                    }
+
+                                    p {
+                                        @include fs(#fff, 20px, 500, $ff1);
+
+                                        span {
+                                            color: #f77c29;
+                                            font-weight: 600;
+                                        }
+                                    }
+
+                                    h2 {
+                                        @include fs(#fff, 24px, 700, $ff1);
+                                    }
+
+                                    a {
+                                        text-transform: uppercase;
+                                        @include fs(#fff, 13px, 600, $ff1);
+                                        transition: all linear .3s;
+
+                                        &:hover {
+                                            color: $hover;
+
+                                            i {
+                                                padding-left: 18px;
+                                            }
+                                        }
+
+                                        i {
+                                            padding-left: 8px;
+                                            transition: all linear .3s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .left_mega_menu3 {
+                            width: 690px;
+                            background: #fff;
+                            position: absolute;
+                            left: 102%;
+                            top: -2px;
+                            box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                            opacity: 0;
+                            visibility: hidden;
+                            padding-left: 20px;
+                            transition: all linear .3s;
+                            z-index: 999;
+
+                            .text_upp {
+                                h4 {
+                                    padding-top: 0px !important;
+                                }
+                            }
+
+                            .side_text {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s
+                                        }
+                                    }
+                                }
+                            }
+
+                            .side_text2 {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left_mega_img3 {
+                                position: relative;
+
+                                img {
+                                    height: 400px;
+                                }
+
+                                .overlay {
+                                    position: absolute;
+                                    left: 19px;
+                                    top: 8%;
+
+                                    h5 {
+                                        @include fs(#cccccc, 14px, 400, $ff1);
+                                        padding-bottom: 7px
+                                    }
+
+                                    p {
+                                        padding-bottom: 17px;
+
+                                        span {
+                                            @include fs(#f77c29, 22px, 700, $ff1);
+                                            text-transform: uppercase;
+                                        }
+                                    }
+
+                                    h2 {
+                                        @include fs(#fff, 22px, 700, $ff1);
+                                    }
+
+                                    a {
+                                        padding: 9px 18px;
+                                        border: 2px solid #fff;
+                                        text-transform: uppercase;
+                                        @include fs(#fff, 13px, 600, $ff1);
+                                        transition: all linear .3s;
+                                        display: inline;
+                                        border-radius: 3px;
+
+                                        &:hover {
+                                            color: $hover;
+                                            background: #fff;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .left_furniture_megamenu {
+                            position: absolute;
+                            left: 100%;
+                            top: 0;
+                            width: 890px;
+                            background: #fff;
+                            padding: 15px;
+                            box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all linear .3s;
+                            z-index: 999o;
+
+                            .side_text {
+                                h4 {
+                                    @include fs($cl1, 14px, 600, $ff1);
+                                    text-transform: uppercase;
+                                    padding: 25px 0 12px;
+                                    border-bottom: 1px solid #f1f1f1;
+                                }
+
+                                ul {
+                                    padding-bottom: 20px;
+                                    padding-top: 12px;
+
+                                    li {
+                                        position: inherit;
+                                        border: none;
+
+                                        &:last-child {
+                                            a {
+                                                @include fs($cl2, 14px, 400, $ff1);
+                                                padding: 0;
+                                                display: inherit;
+                                                line-height: 28px;
+                                                text-transform: capitalize
+                                            }
+                                        }
+
+
+                                        &:hover {
+                                            a {
+                                                color: $hover
+                                            }
+                                        }
+
+                                        a {
+                                            @include fs($cl2, 14px, 400, $ff1);
+                                            padding: 0;
+                                            display: inherit;
+                                            line-height: 28px;
+                                            transition: all linear .3s
+                                        }
+                                    }
+                                }
+                            }
+
+                            .left_mega_img4 {
+                                position: relative;
+
+                                .overlay {
+                                    position: absolute;
+                                    right: 12px;
+                                    top: 20%;
+
+                                    h5 {
+                                        text-align: right;
+                                        @include fs($cl2, 13px, 400, $ff1);
+                                        padding-bottom: 5px
+                                    }
+
+                                    p {
+                                        @include fs($cl1, 11px, 400, $ff1);
+                                        text-align: right;
+
+                                        span {
+                                            @include fs($cl1, 13px, 700, $ff1);
+                                            text-transform: uppercase;
+                                        }
+                                    }
+
+                                    h2 {
+                                        @include fs($cl1, 20px, 700, $ff1);
+                                        padding-bottom: 7px;
+                                    }
+
+                                }
+
+                                .overlay2 {
+                                    position: absolute;
+                                    left: 14px;
+                                    top: 20%;
+
+                                    h5 {
+                                        @include fs(#fff, 13px, 400, $ff1);
+                                        padding-bottom: 5px
+                                    }
+
+                                    p {
+                                        @include fs(#fff, 11px, 400, $ff1);
+
+                                        span {
+                                            @include fs(#fff, 13px, 700, $ff1);
+                                            text-transform: uppercase;
+                                        }
+                                    }
+
+                                    h2 {
+                                        @include fs(#fff, 20px, 700, $ff1);
+                                        padding-bottom: 7px;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .main_menu {
+        padding: 20px 20px;
+
+        ul {
+            li {
+                position: relative;
+
+                &:hover {
+                    .mid_mega_menu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 188%;
+                    }
+
+                    .mid_vendor_mega {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 188%;
+                    }
+
+                    .mid_blog_mega {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 188%;
+                    }
+                }
+
+                a {
+                    margin: 0 12px;
+                    @include fs($cl1, 14px, 600, $ff1);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: -2px;
+                        width: 0;
+                        height: 3px;
+                        background: $hover;
+                        opacity: 0;
+                        // transform: scaleX(0);
+                        transition: all linear .3s;
+
+                    }
+
+                    &:hover {
+                        color: $hover;
+                        transition: all linear .3s;
+
+                        &::after {
+                            width: 100%;
+                            opacity: 1;
+                            // transform: scaleX(1);
+                        }
+                    }
+
+
+                    i {
+                        font-size: 10px;
+                        color: $cl1;
+                        font-weight: 600;
+                        padding-left: 5px;
+                    }
+                }
+
+                .mid_mega_menu {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 800px;
+                    background: #fff;
+                    padding: 30px 20px;
+                    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all linear .3s;
+                    z-index: 999;
+
+                    .mid_mega_text {
+                        h4 {
+                            @include fs($cl1, 15px, 600, $ff1);
+                            text-transform: uppercase;
+                            padding-bottom: 12px;
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    margin: 0 0;
+                                    position: static;
+                                    @include fs($cl2, 14px, 400, $ff1);
+                                    text-transform: capitalize;
+                                    line-height: 28px;
+                                    transition: all linear .3s;
+
+                                    span {
+                                        text-transform: uppercase;
+                                        padding: 0px 5px;
+                                        color: #fff;
+                                        background: #ff9742;
+                                        border-radius: 4px;
+                                        font-size: 11px;
+                                        font-family: $ff1;
+                                        color: white;
+                                        margin-left: 5px;
+                                    }
+
+                                    b {
+                                        text-transform: uppercase;
+                                        padding: 0px 5px;
+                                        color: #fff;
+                                        background: #336699;
+                                        border-radius: 4px;
+                                        font-size: 11px;
+                                        font-family: $ff1;
+                                        color: white;
+                                        margin-left: 5px;
+                                    }
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+
+                                    &::after {
+                                        position: static;
+                                        content: '';
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mid_vendor_mega {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background: #fff;
+                    width: 209px;
+                    padding: 20px;
+                    opacity: 0;
+                    visibility: hidden;
+                    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                    transition: all linear .3s;
+                    z-index: 999;
+
+                    ul {
+                        li {
+                            line-height: 28px;
+                            position: relative;
+                            cursor: pointer;
+
+                            &:first-child {
+                                a {
+                                    i {
+                                        right: -86px;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .vendor_sl_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: -20px;
+
+                                }
+
+                                .vendor_vn_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: -12px;
+                                }
+                            }
+
+                            a {
+                                margin: 0;
+                                position: relative;
+                                @include fs($cl2, 14px, 400, $ff1);
+                                text-transform: capitalize;
+                                transition: all linear .3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $hover;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    right: -80px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-size: 10px;
+                                    color: $cl1;
+                                    padding: 0;
+                                    transition: all linear .3s;
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+
+                                &::after {
+                                    display: none;
+                                }
+                            }
+
+                            .vendor_sl_sub {
+                                position: absolute;
+                                left: 189px;
+                                top: -21px;
+                                width: 211px;
+                                padding: 20px;
+                                opacity: 0;
+                                background: #fff;
+                                visibility: hidden;
+                                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                                transition: all linear .3s;
+                                z-index: 999;
+                            }
+
+                            .vendor_vn_sub {
+                                position: absolute;
+                                left: 189px;
+                                top: -45px;
+                                width: 211px;
+                                padding: 20px;
+                                opacity: 0;
+                                background: #fff;
+                                visibility: hidden;
+                                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                                transition: all linear .4s;
+                                z-index: 999;
+                            }
+
+                        }
+                    }
+                }
+
+                .mid_blog_mega {
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background: #fff;
+                    width: 209px;
+                    padding: 20px;
+                    opacity: 0;
+                    visibility: hidden;
+                    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                    transition: all linear .3s;
+                    z-index: 999;
+
+                    ul {
+                        li {
+                            line-height: 28px;
+                            position: relative;
+                            cursor: pointer;
+
+                            &:nth-child(3) {
+                                a {
+                                    i {
+                                        right: -145px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(4) {
+                                a {
+                                    i {
+                                        right: -115px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(5) {
+                                a {
+                                    i {
+                                        right: -138px;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .grid_sl_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: -18px;
+
+                                }
+
+                                .masonry_sl_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: -12px;
+                                }
+
+                                .mask_sl_sub {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: -7px;
+                                }
+                            }
+
+                            a {
+                                margin: 0;
+                                position: relative;
+                                @include fs($cl2, 14px, 400, $ff1);
+                                text-transform: capitalize;
+                                transition: all linear .3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $hover;
+                                }
+
+                                i {
+                                    position: absolute;
+                                    right: -80px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    font-size: 10px;
+                                    color: $cl1;
+                                    padding: 0;
+                                    transition: all linear .3s;
+
+                                    &:hover {
+                                        color: $hover;
+                                    }
+                                }
+
+                                &::after {
+                                    display: none;
+                                }
+                            }
+
+                            .grid_sl_sub {
+                                position: absolute;
+                                left: 189px;
+                                top: -26px;
+                                width: 211px;
+                                padding: 20px;
+                                background: #fff;
+                                opacity: 0;
+                                visibility: hidden;
+                                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                                transition: all linear .3s;
+                                z-index: 999;
+                            }
+
+                            .masonry_sl_sub {
+                                position: absolute;
+                                left: 189px;
+                                top: -45px;
+                                width: 211px;
+                                padding: 20px;
+                                background: #fff;
+                                opacity: 0;
+                                visibility: hidden;
+                                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                                transition: all linear .4s;
+                                z-index: 999;
+                            }
+
+                            .mask_sl_sub {
+                                position: absolute;
+                                left: 189px;
+                                top: -28px;
+                                width: 211px;
+                                padding: 20px;
+                                background: #fff;
+                                opacity: 0;
+                                visibility: hidden;
+                                box-shadow: 0 2px 35px rgba(0, 0, 0, 0.10);
+                                transition: all linear .4s;
+                                z-index: 999;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main_menu ul li .active {
+        color: $hover;
+    }
+
+    .main_menu ul li .active::after {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .menu_last {
+        padding: 20px 0;
+
+        ul {
+            justify-content: flex-end;
+
+            li {
+                padding-left: 15px;
+                padding-right: 15px;
+
+                a {
+                    @include fs($cl1, 14px, 600, $ff1);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: $hover;
+
+                        i {
+                            color: $hover;
+                        }
+                    }
+
+                    i {
+                        padding-right: 5px;
+                        font-size: 22px;
+                        color: $cl1;
+                        transition: all linear .3s;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.menu-fix {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff !important;
+    z-index: 999 !important;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .10);
+    opacity: 1;
+
+    .menu_left {
+        .left_main {
+
+            border-right: 1px solid #f1f1f1;
+            border-left: 1px solid #f1f1f1;
+            transition: all linear .3s;
+
+            >a {
+                background: #fff !important;
+                transition: all linear .3s;
+
+                i {
+                    transition: all linear .3s;
+                }
+            }
+
+            &:hover {
+                >a {
+                    background: $hover !important;
+                    color: #fff !important;
+
+                    i {
+                        color: #fff !important;
+                    }
+                }
+
+                .left_menu_drop {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .left_menu_drop {
+                visibility: hidden;
+                opacity: 0;
+                transition: all linear .3s;
+            }
+        }
+    }
+}
+
+/*==============================================
+                Navbar Part End
+================================================*/

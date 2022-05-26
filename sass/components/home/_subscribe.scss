@@ -1,0 +1,73 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Subscribe Part Start
+================================================*/
+#subscribe {
+    background: $hover;
+    padding: 30px 0;
+
+    .sub_text {
+        .envelope {
+            text-align: center;
+
+            i {
+                font-size: 47px;
+                color: #fff;
+            }
+        }
+
+        .envelop_text {
+            padding-top: 5px;
+            padding-left: 20px;
+
+            h4 {
+                @include fs(#fff, 16px, 600, $ff1);
+                text-transform: uppercase;
+            }
+
+            p {
+                @include fs(#fff, 13px, 400, $ff1);
+                padding-top: 3px;
+            }
+        }
+    }
+
+    .sub_form {
+        input {
+            width: 78%;
+            padding: 12px 12px;
+            border: 0;
+            border-radius: 4px;
+            outline: 0;
+            @include fs($cl2, 13px, 400, $ff1);
+        }
+
+        .sub_btn {
+            margin-left: 10px;
+            background: none;
+            border: 0;
+            padding: 15px 25px;
+            line-height: 1;
+            border-radius: 4px;
+            background: #333;
+            @include fs(#fff, 14px, 600, $ff1);
+            text-transform: uppercase;
+            transition: all linear .3s;
+
+            &:hover {
+                background: #454545;
+            }
+
+            i {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+
+/*==============================================
+             Subscribe Part End
+================================================*/

@@ -1,0 +1,190 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+         Popular Department Part Start
+================================================*/
+#departments {
+    padding: 60px 0;
+
+    .department_head {
+        h2 {
+            @include fs($cl1, 20px, 700, $ff1);
+            text-transform: capitalize;
+        }
+    }
+
+
+    .mixit_up_btn {
+        ul {
+            .mixitup-control-active {
+                button {
+                    border-color: $hover;
+                    color: $hover;
+                    // font-weight: 700;
+                }
+            }
+
+            li {
+                button {
+                    background: none;
+                    border: 0;
+                    padding: 13px 20px;
+                    line-height: 1;
+                    border: 1px solid #c2c2c2;
+                    border-radius: 5px;
+                    @include fs($cl1, 13px, 600, $ff1);
+                    text-transform: uppercase;
+                    margin: 0 7px;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        border-color: $hover;
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+
+    .mixit_up {
+        .col_lg {
+            width: 20%;
+        }
+
+        .popular_img {
+            position: relative;
+
+            &:hover {
+                a {
+                    img.pop_1 {
+                        display: block;
+                    }
+
+                    img.pop_2 {
+                        display: none;
+                    }
+                }
+
+                .overlay_icon {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            a {
+                transition: all linear .3s;
+                display: block;
+
+                img.pop_1 {
+                    transition: all linear .3s;
+                    display: none;
+                }
+            }
+
+            .overlay_icon {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all linear .3s;
+
+                ul {
+                    li {
+                        a {
+                            width: 40px;
+                            height: 40px;
+                            background: #fff;
+                            border-radius: 50%;
+                            color: $cl2;
+                            text-align: center;
+                            line-height: 40px;
+                            margin: 5px 0;
+                            transition: all linear .3s;
+
+                            &:hover {
+                                background: $hover;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .discount_overlay {
+                position: absolute;
+                left: 18px;
+                top: 15px;
+
+                span {
+                    @include fs(#fff, 12px, 500, $ff1);
+                    text-transform: uppercase;
+                    padding: 4px 10px;
+                    line-height: 1;
+                    border-radius: 4px;
+                    background: $cl3;
+                }
+            }
+        }
+
+        .popular_text {
+            h3 {
+                a {
+                    @include fs($cl1, 13px, 600, $ff1);
+                    text-transform: capitalize;
+                    padding-bottom: 3px;
+                    transition: all linear .3s;
+                }
+
+                &:hover {
+                    a {
+                        color: $hover;
+                    }
+                }
+            }
+
+            ul {
+                padding-bottom: 4px;
+
+                li {
+                    a {
+                        margin: 0 1px;
+                        font-size: 12px;
+                        color: $cl3;
+
+                        .ashh {
+                            color: #ccc;
+                        }
+
+                        span {
+                            @include fs(#999, 12px, 400, $ff1);
+                            margin-left: 4px;
+                            transition: all linear .3s;
+
+                            &:hover {
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            p {
+                @include fs($cl1, 16px, 600, $ff1);
+
+                del {
+                    color: #aaaaaa;
+                    padding-left: 10px;
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+}
+
+
+/*==============================================
+         Popular Department  Part End
+================================================*/

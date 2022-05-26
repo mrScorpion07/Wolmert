@@ -1,0 +1,217 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+                Banner Part Start
+================================================*/
+#banner {
+    .banner_slider {
+        position: relative;
+
+        &:hover {
+            .prv_arr {
+                left: 240px;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .nxt_arr {
+                right: 240px;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .banner_item {
+            // padding: 50px 0;
+            height: 520px;
+
+            .banner_img {
+                padding-top: 50px;
+            }
+
+            .banner_text {
+                padding: 160px 0 100px;
+                text-align: right;
+
+                h3 {
+                    @include fs($cl2, 35px, 500, $ff1);
+                    text-transform: capitalize;
+                    position: relative;
+
+                    &::after {
+                        @include after_br(0, 0, 25%, 3px, #f77c29);
+                    }
+                }
+
+                h1 {
+                    @include fs(#222, 50px, 700, $ff1);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    @include fs($cl2, 25px, 400, $ff1);
+                    padding-top: 6px;
+
+                    span {
+                        color: #f77c29;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+                }
+
+                a {
+                    padding: 17px 35px;
+                    border: 2px solid $cl2;
+                    @include fs($cl2, 16px, 500, $ff1);
+                    text-transform: uppercase;
+                    line-height: 1;
+                    border-radius: 5px;
+                    margin-top: 25px;
+                    transition: all linear .3s;
+
+                    i {
+                        padding-left: 4px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background: $cl1;
+                        border-color: $cl1;
+                    }
+                }
+            }
+
+            .banner_text2 {
+                padding: 137px 0 50px;
+
+                h3 {
+                    @include fs($cl2, 35px, 500, $ff1);
+                    padding-bottom: 3px;
+
+                    span {
+                        color: #f77c29;
+                    }
+                }
+
+                h1 {
+                    @include fs($cl1, 50px, 700, $ff1);
+                    text-transform: capitalize;
+                }
+
+                p {
+                    @include fs($cl2, 25px, 400, $ff1);
+                }
+
+                a {
+                    padding: 17px 35px;
+                    border: 2px solid $cl2;
+                    @include fs($cl2, 16px, 500, $ff1);
+                    text-transform: uppercase;
+                    line-height: 1;
+                    border-radius: 5px;
+                    margin-top: 25px;
+                    transition: all linear .3s;
+
+                    i {
+                        padding-left: 4px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background: $cl1;
+                        border-color: $cl1;
+                    }
+                }
+            }
+
+            .banner_text3 {
+                padding: 140px 0 50px;
+                text-align: right;
+
+                p {
+                    @include fs($cl2, 25px, 400, $ff1);
+                    text-transform: uppercase;
+                }
+
+                h1 {
+                    @include fs($cl2, 40px, 600, $ff1);
+                    text-transform: capitalize;
+                }
+
+                h3 {
+                    @include fs($cl1, 50px, 700, $ff1);
+                    text-transform: lowercase;
+                    padding-top: 7px;
+                    position: relative;
+
+                    &::after {
+                        @include after_bl(-3px, 92px, 79%, 3px, #f77c29);
+                    }
+
+                    span {
+                        @include fs(#fff, 42px, 700, $ff1);
+                        text-transform: capitalize;
+                        background: #f77c29;
+                        border-radius: 5px;
+                        clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+                        padding: 0 30px;
+                    }
+                }
+
+                a {
+                    padding: 17px 35px;
+                    border: 2px solid $cl2;
+                    @include fs($cl2, 16px, 500, $ff1);
+                    text-transform: uppercase;
+                    line-height: 1;
+                    border-radius: 5px;
+                    margin-top: 25px;
+                    transition: all linear .3s;
+
+                    i {
+                        padding-left: 4px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background: $cl1;
+                        border-color: $cl1;
+                    }
+                }
+            }
+        }
+
+        .prv_arr {
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $cl2;
+            font-size: 24px;
+            z-index: 999;
+            transition: all linear .3s;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .nxt_arr {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $cl2;
+            font-size: 24px;
+            z-index: 999;
+            transition: all linear .3s;
+            visibility: hidden;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+/*==============================================
+                Banner Part End
+================================================*/

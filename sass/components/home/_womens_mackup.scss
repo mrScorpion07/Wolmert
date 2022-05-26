@@ -1,0 +1,109 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Womens Mackup Part Start
+================================================*/
+#womens_mackup {
+    padding-bottom: 60px;
+
+    .womens_img {
+        position: relative;
+
+        img {
+            border-radius: 5px;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+
+            p {
+                @include fs(#eeeeee, 14px, 500, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 8px;
+            }
+
+            h1 {
+                @include fs(#fff, 28px, 700, $ff1);
+                text-transform: capitalize;
+                padding-right: 200px;
+                padding-bottom: 15px
+            }
+
+            a {
+                @include fs(#fff, 14px, 600, $ff1);
+                text-transform: uppercase;
+                transition: all linear .3s;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+
+                &::after {
+                    @include after_bl(-4px, 0, 100%, 3px, #fff);
+                    transform: scale(0);
+                    transition: all linear .3s;
+                }
+
+                i {
+                    padding-left: 7px;
+                }
+
+            }
+
+
+        }
+
+        .overlay2 {
+            position: absolute;
+            left: 35px;
+            top: 35px;
+
+            p {
+                @include fs($cl1, 14px, 500, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 8px;
+            }
+
+            h1 {
+                @include fs($cl1, 28px, 700, $ff1);
+                text-transform: capitalize;
+                padding-right: 205px;
+                padding-bottom: 15px
+            }
+
+            a {
+                @include fs($cl1, 14px, 600, $ff1);
+                text-transform: uppercase;
+                transition: all linear .3s;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+
+                &::after {
+                    @include after_bl(-4px, 0, 100%, 3px, $cl1);
+                    transform: scale(0);
+                    transition: all linear .3s;
+                }
+
+                i {
+                    padding-left: 7px;
+                }
+
+            }
+        }
+    }
+}
+
+/*==============================================
+             Womens Mackup  Part End
+================================================*/

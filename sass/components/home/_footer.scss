@@ -1,0 +1,293 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Footer Part Start
+================================================*/
+#footer {
+    padding-top: 60px;
+
+    /*====================================
+            Foot First Part Start
+    ======================================*/
+    .foot_first {
+        padding-bottom: 60px;
+        position: relative;
+
+        &::after {
+            @include after_bl(20px, 0, 100%, 1px, #ddd);
+        }
+
+        .f_left {
+            .f_logo {
+                a {
+                    img {
+                        width: 145px;
+                    }
+                }
+            }
+
+            .f_text {
+                h5 {
+                    @include fs($cl1, 13px, 500, $ff1);
+                    padding-top: 18px;
+                    padding-bottom: 10px;
+                }
+
+                >a {
+                    @include fs($cl1, 18px, 600, $ff1);
+                    transition: all linear .3s;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+
+                p {
+                    @include fs($cl2, 13px, 400, $ff1);
+                    padding-top: 10px;
+
+                    span {
+                        padding-top: 7px;
+                        display: block;
+                    }
+                }
+
+                ul {
+                    padding-top: 20px;
+
+                    li {
+                        a {
+                            i {
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                        }
+
+                        .fb {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: #1b4f9b;
+                            text-align: center;
+                            line-height: 35px;
+                            margin-right: 8px;
+                        }
+
+                        .tw {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: #00adef;
+                            text-align: center;
+                            line-height: 35px;
+                            margin-right: 8px;
+                        }
+
+                        .ig {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: #cc0001;
+                            text-align: center;
+                            line-height: 35px;
+                            margin-right: 8px;
+                        }
+
+
+                        .in {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: #0072b1;
+                            text-align: center;
+                            line-height: 35px;
+                            margin-right: 8px;
+                        }
+
+                        .pin {
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            background: #f96a02;
+                            text-align: center;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f_mid1 {
+            h2 {
+                @include fs($cl1, 14px, 600, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 24px
+            }
+
+            ul {
+                li {
+                    padding-bottom: 7px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    a {
+                        @include fs($cl2, 13px, 400, $ff1);
+                        text-transform: capitalize;
+                        transition: all linear .3s;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f_mid2 {
+            h2 {
+                @include fs($cl1, 14px, 600, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 24px
+            }
+
+            ul {
+                li {
+                    padding-bottom: 7px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    a {
+                        @include fs($cl2, 13px, 400, $ff1);
+                        text-transform: capitalize;
+                        transition: all linear .3s;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .f_end {
+            h2 {
+                @include fs($cl1, 14px, 600, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 24px
+            }
+
+            ul {
+                li {
+                    padding-bottom: 7px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+
+                    a {
+                        @include fs($cl2, 13px, 400, $ff1);
+                        text-transform: capitalize;
+                        transition: all linear .3s;
+
+                        &:hover {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*====================================
+            Foot First Part End
+    ======================================*/
+
+    /*====================================
+            Foot Scnd Part End
+    ======================================*/
+    .foot_scnd {
+        padding: 20px 0 30px;
+        position: relative;
+
+        &::after {
+            @include after_bl(20px, 0, 100%, 1px, #ddd);
+        }
+
+        ul {
+            padding-bottom: 25px;
+
+            li {
+                position: relative;
+
+                &::after {
+                    @include after_tr(7px, 12%, 1px, 70%, #ccc);
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                &:first-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                h2 {
+                    @include fs($cl2, 14px, 600, $ff1);
+                    text-transform: capitalize;
+                    display: inline-block;
+                    padding-right: 20px;
+                }
+
+                a {
+                    @include fs($cl2, 13px, 400, $ff1);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    padding-right: 25px;
+
+                    &:hover {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+
+    /*====================================
+            Foot Scnd Part End
+    ======================================*/
+
+    /*====================================
+            Foot Bottom Part End
+    ======================================*/
+    .foot_bottom {
+        padding: 20px 0;
+
+        h4 {
+            @include fs($cl2, 13px, 400, $ff1);
+            text-transform: capitalize;
+        }
+
+        span {
+            @include fs($cl2, 13px, 400, $ff1);
+            text-transform: capitalize;
+            padding-right: 30px;
+        }
+    }
+
+    /*====================================
+            Foot Bottom Part End
+    ======================================*/
+}
+
+/*==============================================
+             Footer Part End
+================================================*/

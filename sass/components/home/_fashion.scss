@@ -1,0 +1,100 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Fashion Part Start
+================================================*/
+#fashion {
+    padding-bottom: 60px;
+
+    .fashion_bg {
+        padding: 45px 0;
+        border-radius: 5px;
+
+        .offer_left {
+            position: relative;
+
+            &::after {
+                @include after_tr(1px, 10px, 2px, 76px, #505152);
+            }
+
+            h2 {
+                @include fs($cl3, 70px, 800, $ff1);
+                position: relative;
+
+                b {
+                    position: absolute;
+                    right: 65px;
+                    top: 5px;
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+
+                sub {
+                    position: absolute;
+                    right: 67px;
+                    bottom: 20px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .offer_mid {
+            h3 {
+                @include fs(#fff, 30px, 700, $ff1);
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+
+            p {
+                @include fs(#fff, 18px, 500, $ff1);
+                text-transform: capitalize;
+
+                span {
+                    @include fs($cl1, 20px, 600, $ff1);
+                    padding: 0 5px;
+                    background: #fff;
+                }
+
+                b {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .offer_end {
+            margin-top: 26px;
+
+            a {
+                @include fs(#fff, 14px, 700, $ff1);
+                text-transform: uppercase;
+                padding: 13px 27px;
+                line-height: 1;
+                border: 2px solid #fff;
+                border-radius: 4px;
+                transition: all linear .3s;
+
+                i {
+                    padding-left: 5px;
+                    color: #fff;
+                    transition: all linear .3s;
+                }
+
+                &:hover {
+                    color: $hover;
+                    background: #fff;
+
+                    i {
+                        color: $hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*==============================================
+             Fashion  Part End
+================================================*/

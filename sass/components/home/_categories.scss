@@ -1,0 +1,88 @@
+@import '../../mixins/mixin';
+@import '../../variables/variable';
+
+/*==============================================
+             Categories Part Start
+================================================*/
+#Categories {
+    padding: 60px 0;
+    background: #f5f5f5;
+
+    .cat_head {
+        h2 {
+            @include fs($cl1, 20px, 700, $ff1);
+            text-transform: capitalize;
+        }
+    }
+
+    .cate_img {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all linear .3s;
+
+        &:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+
+            // transform: scale(1.1);
+            img {
+                overflow: hidden;
+                transform: scale(1.1);
+            }
+
+            .overlay {
+                .overlay_text {
+                    transform: translateY(-20px);
+                }
+            }
+        }
+
+        img {
+            border-radius: 4px;
+            transition: all linear .3s;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            transform: translateX(-50%);
+            height: 25px;
+            overflow: hidden;
+
+            .overlay_text {
+                transition: all linear .3s;
+
+                h4 {
+                    transition: all linear .3s;
+                    @include fs($cl1, 15px, 600, $ff1);
+                    text-transform: capitalize;
+                }
+
+                a {
+                    @include fs($hover, 16px, 600, $ff1);
+                    transition: all linear .3s;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        &::after {
+                            transform: scale(1);
+                        }
+                    }
+
+                    &::after {
+                        @include after_bl(-1px, 0, 100%, 3px, $hover);
+                        transform: scale(0);
+                        transition: all linear .3s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+/*==============================================
+             Categories  Part End
+================================================*/
